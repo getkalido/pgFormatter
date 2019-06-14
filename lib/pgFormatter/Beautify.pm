@@ -398,6 +398,8 @@ sub tokenize_sql {
 
     my $re = qr{
         (
+                \?\w+ # named parameters
+                |
                 (?:\\(?:copyright|errverbose|g|gx|gexec|gset|q|crosstabview|watch|\?|h|e|ef|ev|p|r|s|w|copy|echo|i|ir|o|qecho|if|elif|else|endif|d(?:[aAbcCdDfFgilLmnoOpstTuvExy]|dp|et|es|eu|ew|fa|fn|ft|fw|Fd|Fp|Ft|rds|Rp|Rs)?S?\+?|l\+?|sf\+?|sv\+?|z|a|C|f|H|pset|t|T|x|c|connect|encoding|password|conninfo|cd|setenv|timing|\!|prompt|set|unset|lo_export|lo_import|lo_list|lo_unlink))(?:$|[\n]|[\ \t](?:(?!\\\\)[\ \t\S])*)        # psql meta-command
                 |
                 (?:\s*--)[\ \t\S]*      # single line comments
