@@ -3029,6 +3029,7 @@ sub set_dicts {
         spgendscan spggetbitmap spggettuple spginsert spgmarkpos spgoptions spgrescan
         spgrestrpos spgvacuumcleanup sqrt statement_timestamp stddev stddev_pop stddev_samp
         string_agg string_agg_finalfn string_agg_transfn string_to_array strip sum
+        st_distancesphere st_setsrid st_makepoint st_x st_y st_contains st_makeenvelope
         tan text text_ge text_gt text_larger
         text_le text_lt text_pattern_ge text_pattern_gt text_pattern_le text_pattern_lt text_smaller
         textanycat textcat texteq texticlike texticnlike texticregexeq texticregexne
